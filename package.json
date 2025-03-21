@@ -2,6 +2,14 @@
   "name": "ques-utils",
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "author": {
+    "name": "QuesDevTeam",
+    "email": "quesdeveloper@quescompany.com",
+    "url": "https://quesdevteam.github.io/"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,5 +18,10 @@
   "devDependencies": {
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
+  },
+  "homepage": "https://github.com/QuesDevTeam/ques-utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QuesDevTeam/ques-utils"
   }
 }
