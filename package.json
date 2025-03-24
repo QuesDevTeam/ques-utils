@@ -4,6 +4,19 @@
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": {
+        "default": "./dist/index.cjs.js"
+      },
+      "import": {
+        "default": "./dist/index.es.js"
+      }
+    }
+  },
   "author": {
     "name": "QuesDevTeam",
     "email": "quesdeveloper@quescompany.com",
