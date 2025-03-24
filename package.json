@@ -1,7 +1,7 @@
 {
   "name": "ques-utils",
   "version": "0.0.3",
-  "type": "module",
+  "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -9,10 +9,14 @@
   ],
   "exports": {
     ".": {
-      "import": {
-        "default": "./dist/index.es.js"
+      "require": {
+        "default": "./dist/index.es.js",
+        "types": "./dist/index.d.ts"
       },
-      "types": "./dist/index.d.ts"
+      "import": {
+        "default": "./dist/index.cjs.js",
+        "types": "./dist/index.d.ts"
+      }
     }
   },
   "author": {

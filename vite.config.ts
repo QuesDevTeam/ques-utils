@@ -6,7 +6,7 @@ export default defineConfig({
     lib: {
       name: '@ques-utils',
       entry: 'src/index.ts',
-      formats: ['es'],
+      formats: ['es', 'cjs'],
       fileName: (format) => `index.${format}.js`,
     },
     minify: 'esbuild',
