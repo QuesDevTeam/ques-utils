@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "typescript": "~5.7.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3"
   },
   "homepage": "https://github.com/QuesDevTeam/ques-utils",
   "repository": {
