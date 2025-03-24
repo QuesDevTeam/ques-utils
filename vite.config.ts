@@ -1,3 +1,4 @@
+import { ModuleKind } from 'typescript';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
@@ -7,9 +8,19 @@ export default defineConfig({
       name: '@ques-utils',
       entry: 'src/index.ts',
       formats: ['es', 'cjs'],
-      fileName: (format) => `index.${format}.js`,
+      fileName: (format) => {
+        if (format === 'cjs') {
+          return 'index.cjs';
+        }
+
+        return 'index.js';
+      },
     },
     minify: 'esbuild',
   },
-  plugins: [dts()],
+  plugins: [
+    dts({
+      outDir: 'dist',
+    }),
+  ],
 });
